@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home prototype</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400&family=Lugrasimo&family=Montserrat+Alternates&family=Roboto+Slab&display=swap"
+		rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<img class="img-logo" src="/images/logo.png"> <a href="index.html" class="logo">Fluid</a>
+		<input class="menu-btn" id="menu-btn" type="checkbox">
+		<label for="menu-btn" class="menu-icon">
+			<span class="nav-icon"></span>
+		</label>
+		<ul class="menu">
+			<li> <a href="index.html" onclick="vaiAllaHome()">
+					<span>Home</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+			<li> <a href="shop.html" onclick="vaiAlloShop()">
+					<span>Shop</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+			<li> <a href="contatti.html" onclick="vaiAiContatti()">
+					<span>Contatti</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+			<li> <a href="accedi.html" onclick="vaiAllAccesso()">
+					<span>Login</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+			<li> <a href="registrazione.html" onclick="vaiAllaRegistrazione()">
+					<span>Registrati</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+		</ul>
+	</header>
+	<div class="containerContatti">
+		<div class="container">
+			<div class="box">
+				<div class="imgBx">
+					<img
+						src="/images/support.jpg" alt="iconaSupport">
+				</div>
+				<div class="content">
+					<div>
+						<h2>Parla con il supporto ora</h2>
+						<p>Fornisci il tuo numero di telefono ed il supporto ti richiamerà entro al max 24h</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img
+						src="/images/mail.jpg" alt="iconaMail">
+				</div>
+				<div class="content">
+					<div>
+						<h2>Online
+						</h2>
+						<p>Puoi contattarci tramite e-mail all'indirizzo seguente: goshop@gmail.it
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img
+						src="/images/iconphone.jpg" alt="iconaPhone">
+				</div>
+				<div class="content">
+					<div>
+						<h2>Servizio clienti h24</h2>
+						<p>Per assistenza su problemi generali sul sito e/o sull'account.</p>
+						<p>800.000.001
+						</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="footer">
+		<footer class="row text-center footerB">
+			<div class="col-6 col-md-3 footer1">
+				<div class="grid" style="font-size: 23px; font-weight: bold;color:#8DC6FF;">Acquista</div>
+				<div class="grid footer2" style="font-size: 15px;"> <a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Buono regalo</a></div>
+				<div class="grid footer3" style="font-size: 15px;"> <a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Mappa del sito</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Blog di Fluid</a></div>
+			</div>
+
+			<div class="col-6 col-md-3 footer1">
+				<div class="grid" style="font-size: 23px; font-weight: bold;color:#8DC6FF;"> Vendi</div>
+				<div class="grid footer2" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Vendere su Fluid</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Team</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Forum</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Affiliati e Creator Co</a></div>
+			</div>
+			<div class="col-6 col-md-3 footer1">
+				<div class="grid" style="font-size: 23px; font-weight: bold;color:#8DC6FF;">Informazioni</div>
+				<div class="grid footer2" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Condizioni di vendita</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Lavora con noi</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Stampa</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Imprint</a></div>
+			</div>
+			<div class="col-6 col-md-3 footer1">
+				<div class="grid" style="font-size: 23px; font-weight: bold; color:#8DC6FF;">Guida</div>
+				<div class="grid footer2" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Centro assistenza</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Impostazioni della privacy</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Scarica l'app di Fluid</a>
+				</div>
+				<div class="grid footer3 social" style="font-size: 15px;">
+					<ul class="icon">
+						<li style="--clr: #1877f2;">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li style="--clr: #ff0000;">
+							<a href="#"><i class="fab fa-youtube"></i></a>
+						</li>
+						<li style="--clr: #1da1f2;">
+							<a href="#"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li style="--clr: #c32aa3;">
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li style="--clr: #25d366;">
+							<a href="#"><i class="fab fa-whatsapp"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+	<script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home prototype</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400&family=Lugrasimo&family=Montserrat+Alternates:ital,wght@0,400;1,800&family=Roboto+Slab&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header class="header">
+		<img class="img-logo" src="/images/logo.png"> <a href="index.html" class="logo">Fluid</a>
+		<input class="menu-btn" id="menu-btn" type="checkbox">
+		<label for="menu-btn" class="menu-icon">
+			<span class="nav-icon"></span>
+		</label>
+		<ul class="menu">
+			<li> <a href="index.html" onclick="vaiAllaHome()">
+					<span>Home</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+			<li> <a href="shop.html" onclick="vaiAlloShop()">
+					<span>Shop</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+			<li> <a href="contatti.html" onclick="vaiAiContatti()">
+					<span>Contatti</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+			<li> <a href="accedi.html" onclick="vaiAllAccesso()">
+					<span>Login</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+			<li> <a href="registrazione.html" onclick="vaiAllaRegistrazione()">
+					<span>Registrati</span>
+					<div class="liquid"></div>
+				</a>
+			</li>
+		</ul>
+	</header>
+
+	<section class="container" style="width: 100%;">
+		<div class="content">
+			<div class="titolo">
+				<h2>Fluid</h2>
+				<p>Scopri l'arte di trasformare sogni in realtà: il potere della tua visione, ora a portata di clic.
+				</p>
+			</div>
+			<div class="containerImg">
+				<div id="immagineIntro"><img class="immagineIntro" src="/images/green-img.png" alt="fotoOggetto">
+			</div>
+		</div>
+		</div>
+		<div class="water"></div>
+
+	</section>
+
+	<section id="section1">
+		<div
+			style="background-color: #8DC6FF; width: 70%; min-height: 320px;max-height: 380px; padding: 40px; border-radius: 70px; box-shadow: -12px 12px 2px 1px rgba(1, 75, 53, 0.7);">
+
+			<h1 style="text-align: center;">Inizia la tua ricerca.</h1>
+
+			<div style="display: flex;flex-wrap: wrap; height: 135px; margin-top: 20px;">
+
+				<div style="display: flex;flex:1; padding: 10px;">
+					<div class="formBox"
+						style="border:2px solid black; width: 100%; height: 100%; border-radius: 30px; padding: 15px;margin-top: 35px;">
+						<h3>Categorie</h3>
+						<select id="inputCategoria"
+							style="width: 100%; background-color: #E4F1FE;border: none; font-size: 20px;border-radius: 13px;">
+
+							<option value="abiti-donna">Abiti donna</option>
+							<option value="abiti-uomo">Abiti uomo</option>
+							<option value="borse-donna">Borse donna</option>
+							<option value="gioielli-donna">Gioielli donna</option>
+							<option value="occhiali-da-sole">Occhiali da sole</option>
+							<option value="orologi-uomo">Orologi uomo</option>
+							<option value="orologi-donna">Orologi donna</option>
+							<option value="scarpe-donna">Scarpe donna</option>
+							<option value="scarpe-uomo">Scarpe uomo</option>
+							<option value="arredamento">Arredamento</option>
+							<option value="coloniali">Cibo</option>
+							<option value="home-decor">Home decor</option>
+							<option value="cura-della-pelle">Cura della pelle</option>
+							<option value="profumi">Profumi</option>
+							<option value="tops">Tops</option>
+							<option value="cellulari">Cellulari</option>
+							<option value="laptops">Laptops</option>
+							<option value="auto">Auto</option>
+							<option value="moto">Moto</option>
+							<option value="luci">Luci</option>
+						</select>
+					</div>
+				</div>
+				<div style="display: flex;flex:1;padding: 10px;">
+					<div class="formBox"
+						style="border:2px solid black; width: 100%; height: 100%; border-radius: 30px; padding: 15px; margin-top: 35px">
+						<h3>Filtro prezzi</h3>
+						<select id="inputPrezzi"
+							style="width: 100%; background-color: #E4F1FE;border: none; font-size: 20px; border-radius: 13px;">
+							<option value="1-2000">Nessuno</option>
+							<option value="1-50">1-50€</option>
+							<option value="50-100">50-100€</option>
+							<option value="200-350">200-350€</option>
+							<option value="350-500">350-500€</option>
+							<option value="500-1000">500-1000€</option>
+							<option value="1000-1500">1000-1500€</option>
+							<option value="1500-2000">1500-2000€</option>
+						</select>
+					</div>
+				</div>
+				<div style="display: flex;flex:1;padding: 10px;">
+					<div class="formBox"
+						style="border:2px solid black; width: 100%; height: 100%; border-radius: 30px; padding: 15px; margin-top: 35px">
+						<h3>Nome prodotto</h3>
+						<input id="inputNomeProdotto" placeholder="Cerca..."
+							style="width: 100%;background-color: rgba(0, 0, 0, 0);border: none;font-size: 25px;">
+						</input>
+					</div>
+				</div>
+
+
+			</div>
+			<div style="display: flex;flex:1;padding: 10px;">
+				<button onclick="vaiAgliAnnunci()"
+					style="color: #1877f2;background-color: #333333; border:2px solid black ; width: 100%; height: 100%; border-radius: 30px; padding: 15px;margin-top: 120px; font-size: 25px;cursor: pointer;"
+					class="btnRegistrati">Cerca</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="footer">
+		<footer class="row text-center footerB">
+			<div class="col-6 col-md-3 footer1">
+				<div class="grid" style="font-size: 23px; font-weight: bold;color:#8DC6FF;">Acquista</div>
+				<div class="grid footer2" style="font-size: 15px;"> <a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Buono regalo</a></div>
+				<div class="grid footer3" style="font-size: 15px;"> <a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Mappa del sito</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Blog di Fluid</a></div>
+			</div>
+
+			<div class="col-6 col-md-3 footer1">
+				<div class="grid" style="font-size: 23px; font-weight: bold;color:#8DC6FF;"> Vendi</div>
+				<div class="grid footer2" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Vendere su Fluid</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Team</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Forum</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Affiliati e Creator Co</a></div>
+			</div>
+			<div class="col-6 col-md-3 footer1">
+				<div class="grid" style="font-size: 23px; font-weight: bold;color:#8DC6FF;">Informazioni</div>
+				<div class="grid footer2" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Condizioni di vendita</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Lavora con noi</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Stampa</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Imprint</a></div>
+			</div>
+			<div class="col-6 col-md-3 footer1">
+				<div class="grid" style="font-size: 23px; font-weight: bold; color:#8DC6FF;">Guida</div>
+				<div class="grid footer2" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Centro assistenza</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Impostazioni della privacy</a></div>
+				<div class="grid footer3" style="font-size: 15px;"><a id="linkFooter" href="#"
+						onclick="vaiAllaHome()">Scarica l'app di Fluid</a>
+				</div>
+				<div class="grid footer3 social" style="font-size: 15px;">
+					<ul class="icon">
+						<li style="--clr: #1877f2;">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li style="--clr: #ff0000;">
+							<a href="#"><i class="fab fa-youtube"></i></a>
+						</li>
+						<li style="--clr: #1da1f2;">
+							<a href="#"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li style="--clr: #c32aa3;">
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li style="--clr: #25d366;">
+							<a href="#"><i class="fab fa-whatsapp"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+	<script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
+</body>
+
+</html>
